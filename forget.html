@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Login Page</title>
+  <style>
+body{
+        margin: 0%;
+        padding: 0%;
+    }
+.container{
+        background-image:url('Building.jpg') ;
+        height: 385px;
+        width: 633px;
+        display: grid;
+        justify-content: center;
+        margin-left: 413px;
+        margin-top: 10%;
+        margin-bottom: 10%;
+        border-color: black;
+        border-top-style: solid;
+        border-top-width: 2px;
+        border-left-width: 2px;
+        border-left-style: solid;
+        border-bottom-width: 2px;
+        border-bottom-style: solid;
+        border-right-width: 2px;
+        border-right-style: solid;
+        background-position: center;
+        background-repeat: repeat-y;
+    }
+
+ p{
+        font-size: 21px;
+        background-color: #6f8d9b;
+        height: 30.167px;
+        margin-bottom: 0px;
+        margin-top: 0px;
+        color: #f8f2e9;
+        width: 435px;
+        margin-left: 97px;
+        padding-left: 7px;
+    }
+    
+h2{
+   font-size: 44px;
+  color: antiquewhite;
+  margin-top: 55px;
+  height: 51.267px;
+  margin-left: 101px;
+  width: 453px;
+    }
+input{
+    width: 447.667px;
+  height: 39px;
+  margin-left: 84px;
+  margin-bottom: 22px;
+  background: #a1b4b4;
+  border-radius: 28px;
+  padding-right: 0px;
+  padding-left: 20px;
+  opacity: 0.8;
+  font-size: initial;
+}
+
+button{
+    width: 24%;
+  height: 36px;
+  margin-left: 152px;
+  margin-top: -4px;
+  color: white;
+  background-color: #30496b;
+  font-size: 16px;
+}
+
+a{
+    color: #1755e8;
+  margin-left: 33px;
+  font-size: medium;
+  margin-top: 0px;
+  background-color: #cad3d8;
+}
+
+  </style>
+</head>
+
+<body>
+<div class="container">
+    <h2>Forgot Your Password?</h2>
+    <p>Enter your registered email to reset your password.</p>
+    <form>
+      <input type="email" placeholder="Enter your email" required>
+      <button onclick="showAlert()" type="submit">Send Reset Link</button>
+      <a href="login.html" onclick="backtologin()" class="back-link">← Back to Login</a>
+    </form>
+  </div>  
+    
+
+    <script>
+      function showAlert() {
+        alert("Check your email for otp:)");
+      }
+
+      function backtologin() {
+        window.open("index.html")
+      }
+    </script>
+   
+  </div>
+</body>
+
+  </html>
+
+  
